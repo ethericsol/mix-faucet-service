@@ -74,9 +74,6 @@ app.post('/getMix', cors(), async function(req, res) {
             },
         })
       .then(async function (response) {
-        console.log(response.data);
-
-        console.log(req.body)
 
         let donation = new Donation();
         donation.toAddr = String(_toAddr);
